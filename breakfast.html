@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <script src="resources\Javascript\jscript.js"></script>
+     <title> Grocery</title>
+</head>
+   <body onload="user()">
+       <header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                     <li><a class="hide" id="username" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li><a id="signin" href="Signup.html">Sign Up</a></li>
+                     <li><a id="login" href="loginpage.html">Login</a></li>
+                     </ul>
+             </div>
+         </nav>
+        </header>
+           <section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Breakfast and Dairy</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure  class="item">
+                                 <img class="image" src="resources/imgs/dairy/A+%20nourish%20milk.jpg" alt="A+ Nourish Milk">
+                             </figure>
+                             <h3 class="item-name">A+ Nourish Milk</h3>
+                         </div>
+                         <div>
+                             <p class="amount">1L</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 83</p>
+                         </div>
+                         <div  >
+                             <a onclick="return cart('A+ Nourish Milk',83)"  href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/almond%20fresh%20vanilla.jpg" alt="Almond Fresh Vanilla">
+                            </figure>
+                            <h3 class="item-name">Almond Fresh Vanilla</h3>
+                        </div>
+                        <div>
+                            <p class="amount">200 ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 70</p>
+                        </div>
+                        <div >
+                            <a onclick="return cart('Almond Fresh Vanilla',70)"  href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/amul-lassi.jpg" alt="Amul Lassi">
+                            </figure>
+                            <h3 class="item-name">Amul Lassi</h3>
+                        </div>
+                        <div>
+                            <p class="amount">250 ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 20</p>
+                        </div>
+                        <div >
+                            <a onclick="return cart('Amul Lassi',20)"  href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/bread-whole%20multigrain%20sliced.jpg" alt="Bread">
+                            </figure>
+                            <h3 class="item-name">Bread-Whole Multigrain Sliced</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                        </div>
+                        <div >
+                            <a onclick="return cart('Bread-Whole Multigrain Sliced',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/dairy/cornflakes.jpg" alt="Cornflakes">
+                             </figure>
+                             <h3 class="item-name">Cornflakes</h3>
+                         </div>
+                         <div>
+                             <p class="amount">500g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                         </div>
+                         <div  >
+                             <a onclick="return cart('Cornflakes',100)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/strawberry%20greek%20yoghurt.jpg" alt="Strawberry Greek Yoghurt">
+                            </figure>
+                            <h3 class="item-name">Strawberry Greek Yoghurt</h3>
+                        </div>
+                        <div>
+                            <p class="amount">90g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 45</p>
+                        </div>
+                        <div >
+                            <a onclick="return cart('Strawberry Greek Yoghurt',45)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/special-kellogs.jfif" alt="Special Kellogs">
+                            </figure>
+                            <h3 class="item-name">Special Kellogs</h3>
+                        </div>
+                        <div >
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                        </div>
+                        <div >
+                            <a  onclick="return cart('Special Kellogs',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/premium%20cow%20milk.jpg" alt="Premium Cow Milk">
+                            </figure>
+                            <h3 class="item-name">Premium Cow Milk</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 70</p>
+                        </div>
+                        <div >
+                            <a onclick="return cart('Premium Cow Milk',70)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/dairy/milkmaid-nestle.jfif" alt="Milkmaid-Nestle">
+                             </figure>
+                             <h3 class="item-name">Milkmaid- Nestle</h3>
+                         </div>
+                         <div>
+                             <p class="amount">400g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 120</p>
+                         </div>
+                         <div >
+                             <a onclick="return cart('Milkmaid-Nestle',120)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/artisanal%20curd.jpg" alt="Artisanal Curd">
+                            </figure>
+                            <h3 class="item-name">Artisanal Curd</h3>
+                        </div>
+                        <div>
+                            <p class="amount">400g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 80</p>
+                        </div>
+                        <div  >
+                            <a onclick="return cart('Artisanal Curd',80)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/blue%20berry%20greek%20yoghurt.jpg" alt="Blueberry Greek Yoghurt">
+                            </figure>
+                            <h3 class="item-name">Blueberry Greek Yoghurt</h3>
+                        </div>
+                        <div>
+                            <p class="amount">90g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 45</p>
+                        </div>
+                        <div  >
+                            <a onclick="return cart('Blueberry Greek Yoghurt',45)"  href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/Bread-Brown.jpg" alt="Bread- Brown">
+                            </figure>
+                            <h3 class="item-name">Brown-Bread</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                        </div>
+                        <div >
+                            <a onclick="return cart('Brown-Bread',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/dairy/Butter-Amul.jpg" alt="Butter-Amul">
+                             </figure>
+                             <h3 class="item-name">Butter- Amul</h3>
+                         </div>
+                         <div>
+                             <p class="amount">200g</p>
+                             <p class="cost">MRP   <span>&#8377;</span>60</p>
+                         </div>
+                         <div  >
+                             <a onclick="return cart('Butter-Amul',60)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/curd-nestle.jfif" alt="Curd-Nestle">
+                            </figure>
+                            <h3 class="item-name">Curd-Nestle</h3>
+                        </div>
+                        <div>
+                            <p class="amount">400g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 70</p>
+                        </div>
+                        <div >
+                            <a  onclick="return cart('Curd-Nestle',70)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/everyday-dairy-whitener.jpg" alt="Everyday-Dairy Whitener">
+                            </figure>
+                            <h3 class="item-name">Everyday-Dairy Whitener</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1.1 kg</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 180</p>
+                        </div>
+                        <div  >
+                            <a  onclick="return cart('Everyday-Dairy Whitener',180)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/dairy/Kellog's%20Chocos.jfif" alt="Kellog's Chocos">
+                            </figure>
+                            <h3 class="item-name">Kellog's Chocos</h3>
+                        </div>
+                        <div>
+                            <p class="amount">350g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 180</p>
+                        </div>
+                        <div >
+                            <a  onclick="return cart('Kellog's Chocos',180)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                  <li><a href="#">Contact us:</a></li>
+                   <p class="para-foot">040-2110-1894-2618<br>Email us: thefkgroceries@gmail.co.in</p>
+               </ul>
+            </div>
+            <div class="col span-1-of-2">
+               <ul class="footer-nav"> 
+                   <li><a href="#"><ion-icon class="ion-social-facebook" name="logo-facebook"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-twitter" name="logo-twitter"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-instagram" name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="row">
+           <p>
+              Copyright &copy; 2020 by Freshkart. All rights reserved.
+            </p>  
+        </div>
+      </footer>
+     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+   </body>
+</html>

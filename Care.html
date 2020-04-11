@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+     <script src="resources\Javascript\jscript.js"></script>
+     <title> Grocery</title>
+ </head>
+ <body onload="user()">
+        
+        <header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                    <li><a class="hide" id="username" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li><a id="signin" href="Signup.html">Sign Up</a></li>
+                     <li><a id="login" href="loginpage.html">Login</a></li>
+                   </ul>
+             </div>
+         </nav>
+        </header>
+        
+        <section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Personal Care</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Personal/30003911_9-loreal-paris-total-repair-5-shampoo.jpg" alt="Loreal Paris- Total Repair 5 Shampoo">
+                             </figure>
+                             <h3 class="item-name">Loreal Paris- Total Repair 5 Shampoo</h3>
+                         </div>
+                         <div>
+                             <p class="amount">640ml</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 450</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Loreal Paris- Total Repair 5 Shampoo',450)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/axe-provoke-deodorant.jpg" alt="Axe- Provoke Deodarant">
+                            </figure>
+                            <h3 class="item-name">Axe- Provoke Deodarant</h3>
+                        </div>
+                        <div>
+                            <p class="amount">150ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 180</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Axe- Provoke Deodarant',180)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/axe-ticket-perfume-intense.jpg" alt="Axe- Ticket Perfume Intense">
+                            </figure>
+                            <h3 class="item-name">Axe- Ticket Perfume Intense</h3>
+                        </div>
+                        <div>
+                            <p class="amount">250g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 15</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Axe- Ticket Perfume Intense',15)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/colgate-active-salt-toothpaste.jpg" alt="Colgate- Active Salt">
+                            </figure>
+                            <h3 class="item-name">Colgate-Active Salt Toothpaste</h3>
+                        </div>
+                        <div>
+                            <p class="amount">200g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 97</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Colgate-Active Salt Toothpaste',97)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Personal/colgate-toothpaste-swarna-vedshakti.jpg" alt="Colgate- Vedshakti">
+                             </figure>
+                             <h3 class="item-name">Colgate- Vedshakti</h3>
+                         </div>
+                         <div>
+                             <p class="amount">100g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 40</p>
+                         </div>
+                         <div>
+                             <a  onclick="return cart('Colgate- Vedshakti',40)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/dettol-original-bathing-bar-soap.jpg" alt="Dettol- Bathing Bar">
+                            </figure>
+                            <h3 class="item-name">Dettol- Bathing Bar</h3>
+                        </div>
+                        <div>
+                            <p class="amount">75g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 30</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Dettol- Bathing Bar',30)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/dove-cream-beauty-bathing-bar.jpg" alt="Dove- Bathing Bar">
+                            </figure>
+                            <h3 class="item-name">Dove-Cream Beauty Bathing Bar</h3>
+                        </div>
+                        <div>
+                            <p class="amount">100g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 50</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Dove-Cream Beauty Bathing Bar',50)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/dove-hair-fall-rescue-shampoo.jpg" alt="Dove- Hairfall Rescue Shampoo">
+                            </figure>
+                            <h3 class="item-name">Dove- Hairfall Rescue Shampoo</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 550</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Dove- Hairfall Rescue Shampoo',550)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Personal/head-shoulder-anti-dandruff-shampoo-anti-hairfall.jpg" alt="Head and Shoulders- Anti Dandruff Shampoo">
+                             </figure>
+                             <h3 class="item-name">Head and Shoulders- Anti Dandruff Shampoo</h3>
+                         </div>
+                         <div>
+                             <p class="amount">650ml</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 370</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Head and Shoulders- Anti Dandruff Shampoo',370)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/head-shoulders-2-in-1-shampoo-conditioner-smooth-silky.jpg" alt="Head and Shoulders- 2-in-1 Shampoo Conditioner">
+                            </figure>
+                            <h3 class="item-name">Head and Shoulders- 2-in-1 Shampoo Conditioner</h3>
+                        </div>
+                        <div>
+                            <p class="amount">340ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 320</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Head and Shoulders- 2-in-1 Shampoo Conditioner',320)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/himalaya-anti-hair-fall-shampoo.jpg" alt="Himalaya- Anti Hairfall Shampoo">
+                            </figure>
+                            <h3 class="item-name">Himalaya- Anti Hairfall Shampoo</h3>
+                        </div>
+                        <div>
+                            <p class="amount">400ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 220</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Himalaya- Anti Hairfall Shampoo',220)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/loreal-paris-colour-protect-shampoo.jpg" alt="Loreal Paris- Colour Protect Shampoo">
+                            </figure>
+                            <h3 class="item-name">Loreal Paris- Colour Protect Shampoo</h3>
+                        </div>
+                        <div>
+                            <p class="amount">360ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 280</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Loreal Paris- Colour Protect Shampoo',280)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Personal/loreal-paris-extraordinary-clay-purifying-hydrating-shampoo.jpg" alt="Loreal Paris- Extraordinary Clay Purifying Shampoo">
+                             </figure>
+                             <h3 class="item-name">Loreal Paris- Extraordinary Clay Purifying Shampoo</h3>
+                         </div>
+                         <div>
+                             <p class="amount">640ml</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 450</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Loreal Paris- Extraordinary Clay Purifying Shampoo',450)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/lux-soap-bar-soft-touch-soft-fragrant-skin-french-rose-almond-oil.jpg" alt="Lux- Soap Bar">
+                            </figure>
+                            <h3 class="item-name">Lux- Soap Bar</h3>
+                        </div>
+                        <div>
+                            <p class="amount">75g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 30</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Lux- Soap Bar',30)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/nivea-deodorant-fresh-active.jpg" alt="Nivea Deodarant- Fresh Active">
+                            </figure>
+                            <h3 class="item-name">Nivea Deodarant- Fresh Active</h3>
+                        </div>
+                        <div>
+                            <p class="amount">150</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 180</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Nivea Deodarant- Fresh Active',180)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/nivea-deodorant-roll-on-whitening-smooth-skin.jpg" alt="Nivea- deodorant Roll-on whitening smooth skin">
+                            </figure>
+                            <h3 class="item-name">Nivea- deodorant Roll-on whitening smooth skin</h3>
+                        </div>
+                        <div>
+                            <p class="amount">50ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 170</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Nivea- deodorant Roll-on whitening smooth skin',170)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Personal/nivea-deodorant-whitening-sensitive-women.jpg" alt="Nivea-Deodorant Whitening sensitive women">
+                             </figure>
+                             <h3 class="item-name">Nivea-Deodorant Whitening sensitive women</h3>
+                         </div>
+                         <div>
+                             <p class="amount">150ml</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 200</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Nivea-Deodorant Whitening sensitive women',200)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/nivea-men-fresh-active-roll-on.jpg" alt="Nivea- Men Fresh Active Roll On">
+                            </figure>
+                            <h3 class="item-name">Nivea- Men Fresh Active Roll On</h3>
+                        </div>
+                        <div>
+                            <p class="amount">50ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 150</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Nivea- Men Fresh Active Roll On',150)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                   <li><a href="#">Contact us:</a></li>
+                   <p class="para-foot">040-2110-1894-2618<br>Email us: thefkgroceries@gmail.co.in</p>
+               </ul>
+            </div>
+            <div class="col span-1-of-2">
+               <ul class="footer-nav"> 
+                   <li><a href="#"><ion-icon class="ion-social-facebook" name="logo-facebook"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-twitter" name="logo-twitter"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-instagram" name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="row">
+           <p>
+              Copyright &copy; 2020 by Freshkart. All rights reserved.
+            </p>  
+        </div>
+     </footer>
+     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+   </body>
+</html>

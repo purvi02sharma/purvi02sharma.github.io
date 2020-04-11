@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+<script src="resources\Javascript\jscript.js"></script>
+<title>
+Grocery
+</title>
+</head>
+<body onload="user()">
+<header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                     <li><a id="username" class="hide" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li ><a id="signin" href="Signup.html">Sign Up</a></li>
+                      <li ><a id="login" href="loginpage.html">Login</a></li>
+                     </ul>
+             </div>
+         </nav>
+</header>
+<section class="section-sign" id="plans">
+            <div class="row">
+                 <h2>Log In</h2>
+            </div>
+<div class="row">
+                
+                    <div class="signup-box">
+                                   <form onsubmit="return login()" action="index.html">
+                                   <center>
+                                                  <input placeholder="Username" type="text" id="userid"/><br><br>
+                                                  <input placeholder="Password" type="password" id="pswrd"/><br><br>
+                                                  <input class="btn btn-full" type="submit" value="LOGIN"/><br><br>
+                                                  <input class="btn btn-full" type="reset" value="CANCEL"/>
+                                        </center>
+                                    </form>
+                       </div>
+                   
+               </div>       
+            </section>
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+      <script src="resources\Javascript\jscript.js"></script>
+     <title> Grocery</title>
+    </head>
+ <body onload="user()">
+       <header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                     <li><a class="hide" id="username" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li><a id="signin" href="Signup.html">Sign Up</a></li>
+                     <li><a id="login" href="loginpage.html">Login</a></li>
+                  </ul>
+             </div>
+         </nav>
+        </header>
+        
+        <section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Sauces and Instant Food</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Instant/119711_8-maggi-rich-tomato-sauce-no-onion-garlic.jpg" alt="Maggi-  Rich Tomato Sauce">
+                             </figure>
+                             <h3 class="item-name">Maggi Rich Tomato Sauce</h3>
+                         </div>
+                         <div>
+                             <p class="amount">1 kg</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 140</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Maggi Rich Tomato Sauce',140)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/chings-green-chilly-sauce.jpg" alt="Chings- Green Chilli Sauce">
+                            </figure>
+                            <h3 class="item-name">Chings- Green Chilli Sauce</h3>
+                        </div>
+                        <div>
+                            <p class="amount">680g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 80</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Chings- Green Chilli Sauce',80)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/chings-red-chilli-sauce.jpg" alt="Chings- Red Chilli Sauce">
+                            </figure>
+                            <h3 class="item-name">Chings- Red Chilli Sauce</h3>
+                        </div>
+                        <div>
+                            <p class="amount">200g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 50</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Chings- Red Chilli Sauce',50)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/heinz-tomato-ketchup.jpg" alt="Heinz- Tomato Ketchup">
+                            </figure>
+                            <h3 class="item-name">Heinz- Tomato Ketchup</h3>
+                        </div>
+                        <div>
+                            <p class="amount">450g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Heinz- Tomato Ketchup',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Instant/kissan-fresh-tomato-ketchup.jpg" alt="Kissan- Fresh Tomato Ketchup">
+                             </figure>
+                             <h3 class="item-name">Kissan- Fresh Tomato Ketchup</h3>
+                         </div>
+                         <div>
+                             <p class="amount">500g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Kissan- Fresh Tomato Ketchup',100)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/maggi-2-minute-instant-noodles-masala.jpg" alt="Maggi- 2-minute Instant Noodles">
+                            </figure>
+                            <h3 class="item-name">Maggi- 2-minute Instant Noodles</h3>
+                        </div>
+                        <div>
+                            <p class="amount">70g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 12</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Maggi- 2-minute Instant Noodles',12)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/maggi-masala-noodles-no-onion-garlic.jpg" alt="Maggi- Masala Noodles- No onion and garlic">
+                            </figure>
+                            <h3 class="item-name">Maggi- Masala Noodles- No onion and garlic</h3>
+                        </div>
+                        <div>
+                            <p class="amount">70g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 15</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Maggi- Masala Noodles- No onion and garlic',15)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/maggi-pazzta-cheese-macaroni-family-saver-pack.jpg" alt="Maggi Pazzta Cheese Macaroni">
+                            </figure>
+                            <h3 class="item-name">Maggi Pazzta Cheese Macaroni</h3>
+                        </div>
+                        <div>
+                            <p class="amount">70g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 25</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Maggi Pazzta Cheese Macaroni',25)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Instant/mccain-crunchy-potato-nuggets-chilli-garlic-potato-bites.jpg" alt="McCain- chilli Garlic Potato Bites">
+                             </figure>
+                             <h3 class="item-name">McCain- Chilli Garlic Potato Bites</h3>
+                         </div>
+                         <div>
+                             <p class="amount">700g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 185</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('McCain- Chilli Garlic Potato Bites',185)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/mccain-french-fries.jpg" alt="McCain- French Fries">
+                            </figure>
+                            <h3 class="item-name">McCain- French Fries</h3>
+                        </div>
+                        <div>
+                            <p class="amount">375g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 110</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('McCain- French Fries',110)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/mccain-mini-samosa-cheese-pizza.jpg" alt="McCain- Mini Samosa Cheese Pizza">
+                            </figure>
+                            <h3 class="item-name">McCain- Mini Samosa Cheese Pizza</h3>
+                        </div>
+                        <div>
+                            <p class="amount">240g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 115</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('McCain- Mini Samosa Cheese Pizza',115)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/mccain-smiles-crispy-happy-potatoes.jpg" alt="McCain- Smiles Crispy Happy Potatoes">
+                            </figure>
+                            <h3 class="item-name">McCain- Smiles Crispy Happy Potatoes</h3>
+                        </div>
+                        <div>
+                            <p class="amount">415g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 110</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('McCain- Smiles Crispy Happy Potatoes',110)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Instant/mccain-veggie-fingers.jpg" alt="McCain- Vggie Fingers">
+                             </figure>
+                             <h3 class="item-name">McCain- Vggie Fingers</h3>
+                         </div>
+                         <div>
+                             <p class="amount">175g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 50</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('McCain- Vggie Fingers',50)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/mccain-veggie-nuggets.jpg" alt="McCain Veggie Nuggets">
+                            </figure>
+                            <h3 class="item-name">McCain Veggie Nuggets</h3>
+                        </div>
+                        <div>
+                            <p class="amount">325g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 125</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('McCain Veggie Nuggets',125)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/nissin-cup-noodles-italiano.jpg" alt="Nissin- Cup Noodles Italiano">
+                            </figure>
+                            <h3 class="item-name">Nissin- Cup Noodles Italiano</h3>
+                        </div>
+                        <div>
+                            <p class="amount">55g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 30</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Nissin- Cup Noodles Italiano',30)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Instant/nissin-cup-noodles-tangy-tomato.jpg" alt="Nissin- Cup Noodles Tango Tomato">
+                            </figure>
+                            <h3 class="item-name">Nissin- Cup Noodles Tango Tomato</h3>
+                        </div>
+                        <div>
+                            <p class="amount">55g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 30</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Nissin- Cup Noodles Tango Tomato',30)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                   <li><a href="#">Contact us:</a></li>
+                   <p class="para-foot">040-2110-1894-2618<br>Email us: thefkgroceries@gmail.co.in</p>
+               </ul>
+            </div>
+            <div class="col span-1-of-2">
+               <ul class="footer-nav"> 
+                   <li><a href="#"><ion-icon class="ion-social-facebook" name="logo-facebook"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-twitter" name="logo-twitter"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-instagram" name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="row">
+           <p>
+              Copyright &copy; 2020 by Freshkart. All rights reserved.
+            </p>  
+        </div>
+       </footer>
+      <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+     </body>
+
+</html>

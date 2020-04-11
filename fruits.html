@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <script src="resources\Javascript\jscript.js"></script>
+     <title> Grocery</title>
+    </head>
+      <body onload="user()">
+        <header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                    <li><a class="hide" id="username" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li><a id="signin" href="Signup.html">Sign Up</a></li>
+                     <li><a id="login" href="loginpage.html">Login</a></li>
+                     </ul>
+             </div>
+         </nav>
+        </header>
+        
+        <section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Fruits and Vegetables</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/veg/apple.jpg" alt="Apple">
+                             </figure>
+                             <h3 class="item-name">Apple</h3>
+                         </div>
+                         <div>
+                             <p class="amount">500g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Apple',100)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/strawberry.jpg" alt="Strawberry">
+                            </figure>
+                            <h3 class="item-name">Strawberry</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 pack</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 140</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Strawberry',140)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/banana.jfif" alt="Banana">
+                            </figure>
+                            <h3 class="item-name">Banana</h3>
+                        </div>
+                        <div>
+                            <p class="amount">250g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 15</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Banana',15)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/pear.jfif" alt="Pear">
+                            </figure>
+                            <h3 class="item-name">Pear</h3>
+                        </div>
+                        <div>
+                            <p class="amount">250g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 70</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Pear',70)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/veg/blueberry.jpg" alt="Blueberry">
+                             </figure>
+                             <h3 class="item-name">Blueberry</h3>
+                         </div>
+                         <div>
+                             <p class="amount">125g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 44</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Blueberry',44)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/Mango.jpg" alt="Mango">
+                            </figure>
+                            <h3 class="item-name">Mango</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span>40</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Mango',40)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/pomogranate.jpg" alt="Pomogranate">
+                            </figure>
+                            <h3 class="item-name">Pomogranate</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 90</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Pomogranate',90)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/guavas.jpg" alt="Guava">
+                            </figure>
+                            <h3 class="item-name">Guava</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Guava',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/veg/tomato.jpg" alt="Tomato">
+                             </figure>
+                             <h3 class="item-name">Tomato</h3>
+                         </div>
+                         <div>
+                             <p class="amount">500g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 15</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Tomato',15)" href="#" class="btn btn-full">Add to cart</a>
+                         </div> 
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/potato.jpg" alt="Potato">
+                            </figure>
+                            <h3 class="item-name">Potato</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 18</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Potato',18)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/onion.jfif" alt="Onion">
+                            </figure>
+                            <h3 class="item-name">Onion</h3>
+                        </div>
+                        <div>
+                            <p class="amount">250g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 50</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Onion',50)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/mushroom.jpg" alt="Mushroom">
+                            </figure>
+                            <h3 class="item-name">Mushroom</h3>
+                        </div>
+                        <div>
+                            <p class="amount">250g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 50</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Mushroom',50)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/veg/red%20chilli.jfif" alt="Red Chilli">
+                             </figure>
+                             <h3 class="item-name">Red Chilli</h3>
+                         </div>
+                         <div>
+                             <p class="amount">50g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 50</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Red Chilli',50)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/garlic.jfif" alt="Garlic">
+                            </figure>
+                            <h3 class="item-name">Garlic</h3>
+                        </div>
+                        <div>
+                            <p class="amount">100g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 30</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Garlic',30)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/coriander.jfif" alt="Coriander">
+                            </figure>
+                            <h3 class="item-name">Coriander</h3>
+                        </div>
+                        <div>
+                            <p class="amount">200g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 30</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Coriander',30)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/veg/broccoli.jpg" alt="Broccoli">
+                            </figure>
+                            <h3 class="item-name">Broccoli</h3>
+                        </div>
+                        <div>
+                            <p class="amount">250g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 60</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Broccoli',60)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                   <li><a href="#">Contact us:</a></li>
+                   <p class="para-foot">040-2110-1894-2618<br>Email us: thefkgroceries@gmail.co.in</p>
+               </ul>
+            </div>
+            <div class="col span-1-of-2">
+               <ul class="footer-nav"> 
+                  <li><a href="#"><ion-icon class="ion-social-facebook" name="logo-facebook"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-twitter" name="logo-twitter"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-instagram" name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="row">
+           <p>
+              Copyright &copy; 2020 by Freshkart. All rights reserved.
+            </p>  
+        </div>
+      </footer>
+     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

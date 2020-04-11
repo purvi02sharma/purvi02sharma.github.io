@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <script src="resources\Javascript\jscript.js"></script>
+     <title> Grocery</title>
+    </head>
+      <body onload="user()">
+        <header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                    <li><a class="hide" id="username" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li><a id="signin" href="Signup.html">Sign Up</a></li>
+                     <li><a id="login" href="loginpage.html">Login</a></li>
+                     </ul>
+             </div>
+         </nav>
+        </header>
+        
+        <section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Offers</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Staples/aashirvaad-atta-whole-wheat.jpg" alt="Ashirwad Atta whole wheat">
+                             </figure>
+                             <h3 class="item-name">Ashirwad Atta whole wheat</h3>
+                         </div>
+                         <div>
+                             <p class="amount">10 kg<br>10% off</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 486</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Ashirwad Atta whole wheat',486)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/aashirvaad-multigrains-atta.jpg" alt="Ashirwad Multigrains Atta">
+                            </figure>
+                            <h3 class="item-name">Ashirwad Multigrains Atta</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 pack<br>10%off</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 140</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Ashirwad Multigrains Atta',126)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/axe-provoke-deodorant.jpg" alt="Axe- Provoke Deodarant">
+                            </figure>
+                            <h3 class="item-name">Axe- Provoke Deodarant</h3>
+                        </div>
+                        <div>
+                            <p class="amount">150ml<br>10% off</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 180</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Axe- Provoke Deodarant',162)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/nivea-deodorant-fresh-active.jpg" alt="Nivea Deodarant- Fresh Active">
+                            </figure>
+                            <h3 class="item-name">Nivea Deodarant- Fresh Active</h3>
+                        </div>
+                        <div>
+                            <p class="amount">150ml<br>10%off</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 180</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Nivea Deodarant- Fresh Active',162)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                 <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/nivea-deodorant-roll-on-whitening-smooth-skin.jpg" alt="Nivea- deodorant Roll-on whitening smooth skin">
+                            </figure>
+                            <h3 class="item-name">Nivea- deodorant Roll-on whitening smooth skin</h3>
+                        </div>
+                        <div>
+                            <p class="amount">50ml<br>8%off</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 170</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Nivea- deodorant Roll-on whitening smooth skin',165)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+               <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Personal/nivea-deodorant-whitening-sensitive-women.jpg" alt="Nivea-Deodorant Whitening sensitive women">
+                             </figure>
+                             <h3 class="item-name">Nivea-Deodorant Whitening sensitive women</h3>
+                         </div>
+                         <div>
+                             <p class="amount">150ml<br>10%off</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 200</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Nivea-Deodorant Whitening sensitive women',180)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Personal/nivea-men-fresh-active-roll-on.jpg" alt="Nivea- Men Fresh Active Roll On">
+                            </figure>
+                            <h3 class="item-name">Nivea- Men Fresh Active Roll On</h3>
+                        </div>
+                        <div>
+                            <p class="amount">50ml<br>8% off</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 150</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Nivea- Men Fresh Active Roll On',138)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Offers/cadbury-celebrations-assorted-chocolate-gift-pack-168.8g-160.jpg" alt="Cadbury Celebrations-Assorted Chocolate Gift Pack">
+                            </figure>
+                            <h3 class="item-name">Cadbury Celebrations-Assorted Chocolate Gift Pack</h3>
+                        </div>
+                        <div>
+                            <p class="amount">168.8g<br>10% off</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 145</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Cadbury Celebrations-Assorted Chocolate Gift Pack',130)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Offers/cadbury-celebrations-chocolate-gift-pack-assorted-premium-286.3g-350.jpg" alt="Cadbury Celebrations-Assorted Chocolate Gift Pack Premium">
+                             </figure>
+                             <h3 class="item-name">Cadbury Celebrations-Assorted Chocolate Gift Pack Premium</h3>
+                         </div>
+                         <div>
+                             <p class="amount">286.3g<br>15% off</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 300</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Cadbury Celebrations-Assorted Chocolate Gift Pack Premium',255)" href="#" class="btn btn-full">Add to cart</a>
+                         </div> 
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Offers/cadbury-celebrations-gift-pack-assorted-chocolates-66.6g-50.jpg" alt="Cadbury Celebrations-Assorted Chocolate Gift Pack">
+                            </figure>
+                            <h3 class="item-name">Cadbury Celebrations-Assorted Chocolate Gift Pack</h3>
+                        </div>
+                        <div>
+                            <p class="amount">66.6g<br>10% off</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 45</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Cadbury Celebrations-Assorted Chocolate Gift Pack',40)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Offers/cadbury-celebrations-rich-dry-fruits-chocolates-collection-120g-250.jpg" alt="Cadbury Celebrations-Rich Dry Fruit Chocolates Collection">
+                            </figure>
+                            <h3 class="item-name">Cadbury Celebrations-Rich Dry Fruit Chocolates Collection</h3>
+                        </div>
+                        <div>
+                            <p class="amount">120g<br>15% off</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 250</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Cadbury Celebrations-Rich Dry Fruit Chocolates Collection',225)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Offers/cadbury-dairy-milk-silk-valentines-home-treats-162g-200.jpg" alt="Mushroom">
+                            </figure>
+                            <h3 class="item-name">Cadbury Dairy Milk Valentines Home Treats</h3>
+                        </div>
+                        <div>
+                            <p class="amount">162g<br>10% off</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 180</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Cadbury Dairy Milk Valentines Home Treats',162)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Offers/banganapalli-mango-1kg-160.jpg" alt="Banganapalli Mango">
+                             </figure>
+                             <h3 class="item-name">Banganapalli Mango</h3>
+                         </div>
+                         <div>
+                             <p class="amount">1 kg</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 160</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('>Banganapalli Mango',160)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Offers/dasheri-mango-1kg-60.jpg" alt="Dasheri Mango">
+                            </figure>
+                            <h3 class="item-name">Dasheri Mango</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 kg</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 60</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Dasheri Mango',30)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Offers/fresho-alphonso-mango-ratnagiri-6pcs-599.jpg" alt="Alphanso Mango">
+                            </figure>
+                            <h3 class="item-name">Alphanso Mango</h3>
+                        </div>
+                        <div>
+                            <p class="amount">6 pcs</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 599</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Alphanso Mango',550)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Offers/lalbagh-mango-sindhura-1kg-160.jpg" alt="Lalbagh Mango Sindhura">
+                            </figure>
+                            <h3 class="item-name">Lalbagh Mango Sindhura</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 kg</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 160</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Lalbagh Mango Sindhura',145)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                   <li><a href="#">Contact us:</a></li>
+                   <p class="para-foot">040-2110-1894-2618<br>Email us: thefkgroceries@gmail.co.in</p>
+               </ul>
+            </div>
+            <div class="col span-1-of-2">
+               <ul class="footer-nav"> 
+                   <li><a href="#"><ion-icon class="ion-social-facebook" name="logo-facebook"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-twitter" name="logo-twitter"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-instagram" name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="row">
+           <p>
+              Copyright &copy; 2020 by Freshkart. All rights reserved.
+            </p>  
+        </div>
+       </footer>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+   </body>
+</html>

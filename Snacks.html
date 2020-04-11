@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+     <script src="resources\Javascript\jscript.js"></script>
+     <title> Grocery</title>
+   </head>
+ <body onload="user()">
+      <header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                     <li><a class="hide" id="username" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li><a id="signin" href="Signup.html">Sign Up</a></li>
+                     <li><a id="login" href="loginpage.html">Login</a></li>
+                     </ul>
+             </div>
+         </nav>
+        </header>
+        
+        <section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Biscuits and Snacks</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Snacks/amul-dark-chocolate-55-rich-in-cocoa.jpg" alt="Amul- Dark Chocolate">
+                             </figure>
+                             <h3 class="item-name">Amul- Dark Chocolate</h3>
+                         </div>
+                         <div>
+                             <p class="amount">150g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 90</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Amul- Dark Chocolate',90)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/amul-fruit-n-nut-dark-chocolate-55-rich-in-cocoa.jpg" alt="Amul- Fruit n Nut Dark Chocolate">
+                            </figure>
+                            <h3 class="item-name">Amul- Fruit n Nut Dark Chocolate</h3>
+                        </div>
+                        <div>
+                            <p class="amount">150 g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 90</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Amul- Fruit n Nut Dark Chocolate',90)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/amul-sugar-free-dark-chocolate-55-rich-in-cocoa.jpg" alt="Amul- Sugar free Dark Chocolate">
+                            </figure>
+                            <h3 class="item-name">Amul- Sugar free Dark Chocolate</h3>
+                        </div>
+                        <div>
+                            <p class="amount">150g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 90</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Amul- Sugar free Dark Chocolate',90)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/britannia-bourbon-chocolate-cream-biscuits.jpg" alt="Britannia- Bourbon Chocolate Cream Biscuits">
+                            </figure>
+                            <h3 class="item-name">Britannia- Bourbon Chocolate Cream Biscuits</h3>
+                        </div>
+                        <div>
+                            <p class="amount">150g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 30</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Britannia- Bourbon Chocolate Cream Biscuits',30)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Snacks/britannia-good-day-butter-cookies.jpg" alt="Britannia- Good Day Butter Cookies">
+                             </figure>
+                             <h3 class="item-name">Britannia- Good Day Butter Cookies</h3>
+                         </div>
+                         <div>
+                             <p class="amount">100g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 15</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Britannia- Good Day Butter Cookies',15)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/britannia-little-hearts-biscuits.jpg" alt="Britannia- Little Hearts Biscuits">
+                            </figure>
+                            <h3 class="item-name">Britannia- Little Hearts Biscuits</h3>
+                        </div>
+                        <div>
+                            <p class="amount">34.5g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 10</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Britannia- Little Hearts Biscuits',10)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/britannia-nutri-choice-hi-fibre-digestive-biscuits.jpg" alt="Britannia- Nutri Choice High Fibre Biscuits">
+                            </figure>
+                            <h3 class="item-name">Britannia- Nutri Choice High Fibre Biscuits</h3>
+                        </div>
+                        <div>
+                            <p class="amount">100g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 20</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Britannia- Nutri Choice High Fibre Biscuits',20)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/cadbury-dairy-milk-chocolate-bar-crispello.jpg" alt="Cadbury- Dairy Milk Chocolate Bar Crispello">
+                            </figure>
+                            <h3 class="item-name">Cadbury- Dairy Milk Chocolate Bar Crispello</h3>
+                        </div>
+                        <div>
+                            <p class="amount">33g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 30</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart(Cadbury- Dairy Milk Chocolate Bar Crispello',30)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Snacks/cadbury-dairy-milk-silk-hazelnut-chocolate-bar.jpg" alt="Cadbury- Dairy Milk Silk Hazelnt Chocolate Bar">
+                             </figure>
+                             <h3 class="item-name">Cadbury- Dairy Milk Silk Hazelnt Chocolate Bar</h3>
+                         </div>
+                         <div>
+                             <p class="amount">143g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 160</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Cadbury- Dairy Milk Silk Hazelnt Chocolate Bar',160)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/cadbury-oreo-dipped-cookie.jpg" alt="Cadbury- Oreo dipped Cookie">
+                            </figure>
+                            <h3 class="item-name">Cadbury- Oreo dipped Cookie</h3>
+                        </div>
+                        <div>
+                            <p class="amount">150g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 170</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Cadbury- Oreo dipped Cookie',170)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/haldirams-namkeen-bhel-puri.jpg" alt="Haldirams- Namkeen Bhel Puri">
+                            </figure>
+                            <h3 class="item-name">Haldirams- Namkeen Bhel Puri</h3>
+                        </div>
+                        <div>
+                            <p class="amount">150g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 50</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Haldirams- Namkeen Bhel Puri',50)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/haldirams-namkeen-lemon-bhel.jpg" alt="Haldirams- Namkeen Lemon Bhel">
+                            </figure>
+                            <h3 class="item-name">Haldirams- Namkeen Lemon Bhel</h3>
+                        </div>
+                        <div>
+                            <p class="amount">57g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 10</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Haldirams- Namkeen Lemon Bhel',10)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Snacks/haldirams-namkeen-ratlami-sev.jpg" alt="Haldirams- Namkeen Ratlami Sev">
+                             </figure>
+                             <h3 class="item-name">Haldirams- Namkeen Ratlami Sev</h3>
+                         </div>
+                         <div>
+                             <p class="amount">150g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 32</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Haldirams- Namkeen Ratlami Sev',32)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/haldirams-soya-sticks.jpg" alt="Haldirams- Soya Sticks">
+                            </figure>
+                            <h3 class="item-name">Haldirams- Soya Sticks</h3>
+                        </div>
+                        <div>
+                            <p class="amount">150g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 35</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Haldirams- Soya Sticks',35)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/lays-hot-sweet-chilli.jpg" alt="Lays- Hot Sweet Chilli">
+                            </figure>
+                            <h3 class="item-name">Lays- Hot Sweet Chilli</h3>
+                        </div>
+                        <div>
+                            <p class="amount">200g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 30</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Lays- Hot Sweet Chilli',30)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/lays-potato-chips-flirty-tomato-tango.jpg" alt="Lays- Tomato Tango">
+                            </figure>
+                            <h3 class="item-name">Lays- Tomato Tango</h3>
+                        </div>
+                        <div>
+                            <p class="amount">95g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 35</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Lays- Tomato Tango',35)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Snacks/lays-potato-chips-simple-classic-salted.jpg" alt="Lays- Simple Classic Salted">
+                            </figure>
+                            <h3 class="item-name">Lays- Simple Classic Salted</h3>
+                        </div>
+                        <div>
+                            <p class="amount">95g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 35</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Lays- Simple Classic Salted',35)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                   <li><a href="#">Contact us:</a></li>
+                   <p class="para-foot">040-2110-1894-2618<br>Email us: thefkgroceries@gmail.co.in</p>
+               </ul>
+            </div>
+            <div class="col span-1-of-2">
+               <ul class="footer-nav"> 
+                   <li><a href="#"><ion-icon class="ion-social-facebook" name="logo-facebook"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-twitter" name="logo-twitter"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-instagram" name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="row">
+           <p>
+              Copyright &copy; 2020 by Freshkart. All rights reserved.
+            </p>  
+        </div>
+      </footer>
+     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+</html>

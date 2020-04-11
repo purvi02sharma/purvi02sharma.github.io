@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+<script src="resources\Javascript\jscript.js"></script>
+     <title> Grocery</title>
+  </head>
+   <body onload="user()">
+        <header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                  <li><a class="hide" id="username" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li><a id="signin" href="Signup.html">Sign Up</a></li>
+                     <li><a id="login" href="loginpage.html">Login</a></li>
+                  </ul>
+             </div>
+         </nav>
+        </header>
+        
+        <section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Grocery and Staples</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Staples/aashirvaad-atta-whole-wheat.jpg" alt="Ashirwad Atta whole wheat">
+                             </figure>
+                             <h3 class="item-name">Ashirwad Atta whole wheat</h3>
+                         </div>
+                         <div>
+                             <p class="amount">10 kg</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 540</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Ashirwad Atta whole wheat',540)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/aashirvaad-multigrains-atta.jpg" alt="Ashirwad Multigrains Atta">
+                            </figure>
+                            <h3 class="item-name">Ashirwad Multigrains Atta</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 pack</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 140</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Ashirwad Multigrains Atta',140)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/daawat-basmati-rice-rozana-gold.jpg" alt="Daawat Basmati Rice">
+                            </figure>
+                            <h3 class="item-name">Daawat Basmati Rice- Rozana Gold</h3>
+                        </div>
+                        <div>
+                            <p class="amount">5 kg</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 280</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Daawat Basmati Rice- Rozana Gold',280)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/everest-garam-masala.jpg" alt="Everest Garam Masala">
+                            </figure>
+                            <h3 class="item-name">Everest Garam Masala</h3>
+                        </div>
+                        <div>
+                            <p class="amount">100g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 78</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Everest Garam Masala',78)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Staples/everest-kitchen-king-masala.jpg" alt="Everest Kitchen King Masala">
+                             </figure>
+                             <h3 class="item-name">Everest Kitchen King Masala</h3>
+                         </div>
+                         <div>
+                             <p class="amount">100g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 60</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Everest Kitchen King Masala',60)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/everest-powder-cumin.jpg" alt="Everest- Cumin Powder">
+                            </figure>
+                            <h3 class="item-name">Everest- Cumin Powder</h3>
+                        </div>
+                        <div>
+                            <p class="amount">100g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 160</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Everest- Cumin Powder',160)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/everest-powder-green-coriander.jpg" alt="Everest- Powder Green Coriander">
+                            </figure>
+                            <h3 class="item-name">Everest- Powder Green Coriander</h3>
+                        </div>
+                        <div>
+                            <p class="amount">100g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 125</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Everest- Powder Green Coriander',125)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/everest-powder-turmeric.jpg" alt="Everest- Powder Turmeric">
+                            </figure>
+                            <h3 class="item-name">Everest- Powder Turmeric</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 120</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Everest- Powder Turmeric',120)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Staples/everest-tikhalal-chilli-powder.jpg" alt="Everest- Tikhalal Chilli Powder">
+                             </figure>
+                             <h3 class="item-name">Everest- Tikhalal Chilli Powder</h3>
+                         </div>
+                         <div>
+                             <p class="amount">500g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 125</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Everest- Tikhalal Chilli Powder',125)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/fortune-besan-channa.jpg" alt="Fortune- Besan Channa">
+                            </figure>
+                            <h3 class="item-name">Fortune- Besan Channa</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 60</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Fortune- Besan Channa',60)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/india-gate-basmati-rice-feast-rozzana.jpg" alt="India Gate- Basmati Rice">
+                            </figure>
+                            <h3 class="item-name">India Gate- Basmati Rice</h3>
+                        </div>
+                        <div>
+                            <p class="amount">5 kg</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 95</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('India Gate- Basmati Rice',95)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/jiwa-gluten-free-maida.jpg" alt="Jiwa Gluten Free Maida">
+                            </figure>
+                            <h3 class="item-name">Jiwa- Gluten Free Maida</h3>
+                        </div>
+                        <div>
+                            <p class="amount">900g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 190</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Jiwa- Gluten Free Maida',190)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Staples/madhur-sugar-refined%202kg.jpg" alt="Madhur- Sugar Refined">
+                             </figure>
+                             <h3 class="item-name">Madhur- Sugar Refined</h3>
+                         </div>
+                         <div>
+                             <p class="amount">5 kg</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 220</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Madhur- Sugar Refined',220)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/mothers-recipe-paste-ginger-garlic.jpg" alt="Mothers Recipe- Paste Ginger and Garlic">
+                            </figure>
+                            <h3 class="item-name">Mothers Recipe- Paste Ginger and Garlic</h3>
+                        </div>
+                        <div>
+                            <p class="amount">200g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 50</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Mothers Recipe- Paste Ginger and Garlic',50)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/saffola-salt.jpg" alt="Saffola- Salt">
+                            </figure>
+                            <h3 class="item-name">Saffola- Salt</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 kg</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 35</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Saffola- Salt',35)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/tata-salt--iodized.jpg" alt="Tata Salt- Iodized">
+                            </figure>
+                            <h3 class="item-name">Tata Salt- Iodized</h3>
+                        </div>
+                        <div>
+                            <p class="amount">2 kg</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 40</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Tata Salt- Iodized',40)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Staples/tata-sampann-besan-100-chana-dal.jpg" alt="Tata Sampann- Besan Chana Dal">
+                             </figure>
+                             <h3 class="item-name">Tata Sampann- Besan Chana Dal</h3>
+                         </div>
+                         <div>
+                             <p class="amount">1 kg</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Tata Sampann- Besan Chana Dal',100)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Staples/weikfield-cornflour.jpg" alt="Weikfield- Cornflour">
+                            </figure>
+                            <h3 class="item-name">Weikfield- Cornflour</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 80</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Weikfield- Cornflou',80)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                  <li><a href="#">Contact us:</a></li>
+                   <p class="para-foot">040-2110-1894-2618<br>Email us: thefkgroceries@gmail.co.in</p>
+               </ul>
+            </div>
+            <div class="col span-1-of-2">
+               <ul class="footer-nav"> 
+                   <li><a href="#"><ion-icon class="ion-social-facebook" name="logo-facebook"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-twitter" name="logo-twitter"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-instagram" name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="row">
+           <p>
+              Copyright &copy; 2020 by Freshkart. All rights reserved.
+            </p>  
+        </div>
+      </footer>
+      <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>  
+  </body>
+</html>

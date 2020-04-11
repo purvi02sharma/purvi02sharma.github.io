@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+<script src="resources\Javascript\jscript.js"></script>
+     <title> Grocery</title>
+</head>
+ <body onload="user()">
+     <header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                     <li><a class="hide" id="username" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li><a id="signin" href="Signup.html">Sign Up</a></li>
+                     <li><a id="login" href="loginpage.html">Login</a></li>
+                  </ul>
+             </div>
+         </nav>
+        </header>
+        
+        <section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Household Items</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Household/dettol-disinfectant-cleaner-for-home-lime-fresh.jpg" alt="Dettol- Disinfectant Cleaner for home- Lime Fresh">
+                             </figure>
+                             <h3 class="item-name">Dettol- Disinfectant Cleaner for home- Lime Fresh</h3>
+                         </div>
+                         <div>
+                             <p class="amount">500 ml</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 170</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Dettol- Disinfectant Cleaner for home- Lime Fresh',170)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Household/dettol-skincare-hand-wash-liquid-pump.jpg" alt="Dettol- Skinacre Hand wash">
+                            </figure>
+                            <h3 class="item-name">Dettol- Skinacre Hand wash</h3>
+                        </div>
+                        <div>
+                            <p class="amount">200 ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Dettol- Skinacre Hand wash',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Household/ezee-liquid-detergent-winterwear-chiffon-silks.jpg" alt="Ezee- Liquid Detergent">
+                            </figure>
+                            <h3 class="item-name">Ezee- Liquid Detergent</h3>
+                        </div>
+                        <div>
+                            <p class="amount">250g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 48</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Ezee- Liquid Detergent',48)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Household/genteel-liquid-detergent-washomatic.jpg" alt="Genteel- Liquid Detergent">
+                            </figure>
+                            <h3 class="item-name">Genteel- Liquid Detergent</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 kg</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 170</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Genteel- Liquid Detergent',170)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Household/harpic-power-plus-disinfectant-toilet-cleaner-orange.jpg" alt="Harpic Power Plus Disinfectant Toilet Cleaner">
+                             </figure>
+                             <h3 class="item-name">Harpic Power Plus Disinfectant Toilet Cleaner</h3>
+                         </div>
+                         <div>
+                             <p class="amount">1 L</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 150</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Harpic Power Plus',150)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Household/hindalco-freshwrapp-standard-aluminium-foil.jpg" alt="Hindalco- Aluminium Foil">
+                            </figure>
+                            <h3 class="item-name">Hindalco- Aluminium Foil</h3>
+                        </div>
+                        <div>
+                            <p class="amount">25g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 35</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Hindalco- Aluminium Foil',35)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Household/lizol-disinfectant-surface-cleaner-citrus.jpg" alt="Lizol- Disinfectant Surface Cleaner">
+                            </figure>
+                            <h3 class="item-name">Lizol- Disinfectant Surface Cleaner</h3>
+                        </div>
+                        <div>
+                            <p class="amount">200 ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 38</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Lizol- Disinfectant Surface Cleaner',38)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Household/rin-advanced-detergent-powder.jpg" alt="Rin- Advanced Detergent Powder">
+                            </figure>
+                            <h3 class="item-name">Rin- Advanced Detergent Powder</h3>
+                        </div>
+                        <div>
+                            <p class="amount">7kg</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 598</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Rin- Advanced Detergent Powder',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Household/surf-excel-detergent-bar.jpg" alt="Surf-Excel Detergent Bar">
+                             </figure>
+                             <h3 class="item-name">Surf-Excel Detergent Bar</h3>
+                         </div>
+                         <div>
+                             <p class="amount">250g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 25</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Surf-Excel Detergent Bar',100)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Household/surf-excel-detergent-powder-matic-top-load.jpg" alt="Surf-Excel Detergent Powder">
+                            </figure>
+                            <h3 class="item-name">Surf-Excel Detergent Powder</h3>
+                        </div>
+                        <div>
+                            <p class="amount">6kg</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 1100</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Surf-Excel Detergent Powder',1100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Household/surf-excel-easy-wash-detergent-liquid.jpg" alt="Surf-Excel Easy Wash Detergent Liquid">
+                            </figure>
+                            <h3 class="item-name">Surf-Excel Easy Wash Detergent Liquid</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500 ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 90</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Surf-Excel Easy Wash Detergent Liquid',90)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Household/vim-dishwash-bar-lemon.jpg" alt="Vim- Dishwash Bar">
+                            </figure>
+                            <h3 class="item-name">Vim- Dishwash Bar</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500g</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 45</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Vim- Dishwash Bar',45)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Household/vim-dishwash-gel-lemon.jpg" alt="Vim- Dishwash Gel">
+                             </figure>
+                             <h3 class="item-name">Vim- Dishwash Gel</h3>
+                         </div>
+                         <div>
+                             <p class="amount">500 ml</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 160</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Vim- Dishwash Gel',160)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Household/vim-dishwash-liquid-lemon-refill-pack.jpg" alt="Vim- Dishwash LIquid Lemon Refill">
+                            </figure>
+                            <h3 class="item-name">Vim- Dishwash Liquid Lemon Refill</h3>
+                        </div>
+                        <div>
+                            <p class="amount">500 ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Vim- Dishwash Liquid Lemon Refill',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+         <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                   <li><a href="#">Contact us:</a></li>
+                   <p class="para-foot">040-2110-1894-2618<br>Email us: thefkgroceries@gmail.co.in</p>
+               </ul>
+            </div>
+            <div class="col span-1-of-2">
+               <ul class="footer-nav"> 
+                   <li><a href="#"><ion-icon class="ion-social-facebook" name="logo-facebook"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-twitter" name="logo-twitter"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-instagram" name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="row">
+           <p>
+              Copyright &copy; 2020 by Freshkart. All rights reserved.
+            </p>  
+        </div>
+      </footer>
+      <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+</html>

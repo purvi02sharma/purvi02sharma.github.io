@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+     <script src="resources\Javascript\jscript.js"></script>
+<title>
+Grocery
+</title>
+</head>
+<body onload="user(); gotocart()">
+<header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                     <li><a id="username" class="hide" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li ><a id="signin" href="Signup.html">Sign Up</a></li>
+                      <li ><a id="login" href="loginpage.html">Login</a></li>
+                     </ul>
+             </div>
+         </nav>
+</header>
+<h2>CART</h2>
+<h3 id="noitem"  >YOUR CART IS EMPTY</h3>
+<div class="row">
+<table id="table1" border="2px" align="center" >
+	<tr>
+		<th>Sr no.  </th>
+		<th>Product Name</th>
+		<th>Price</th>
+		<th>Action</th>
+	</tr>
+<tr>
+<td  colspan=2>
+Total</td><td  colspan=2 id="total">value</td>
+</tr>
+</table> <br><br>
+    </div>
+<div class="row" align="center">
+<p id="deliver"></p><br><br>
+<button type="submit" id="order" onclick="order()">Place order</button> <br><br>
+    </div>
+</body>
+</html>

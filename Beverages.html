@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+     <script src="resources\Javascript\jscript.js"></script>
+     <title> Grocery</title>
+     </head>
+    <body onload="user()">
+       <header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources/imgs/logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                     <li><a class="hide" id="username" href="index.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="index.html">Log Out</a></li>
+                     <li><a class="hide" id="cart" href="gotocart.html">Go to Cart</a></li>  
+                     <li><a href="index.html">Shop by category</a></li>
+                     <li><a id="signin" href="Signup.html">Sign Up</a></li>
+                     <li><a id="login" href="loginpage.html">Login</a></li>
+                     
+                  </ul>
+             </div>
+         </nav>
+        </header>
+   <section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Beverages</h2>
+             </div>
+             <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Beverages/amul-kool-cafe-milk-coffee.jpg" alt="Amul Kool Cafe Milk Coffee">
+                             </figure>
+                             <h3 class="item-name">Amul Kool Cafe Milk Coffee</h3>
+                         </div>
+                         <div>
+                             <p class="amount">200ml</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 30</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Amul Kool Cafe Milk Coffee',100)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/apple%20juice.jpg" alt="Apple Juice">
+                            </figure>
+                            <h3 class="item-name">Apple Juice</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Apple Juice',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/appy-fizz-apple-juice-based-drink.jpg" alt="Appy Fizz Apple Juice">
+                            </figure>
+                            <h3 class="item-name">Appy Fizz Apple Juice</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1.5 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 80</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Appy Fizz',80)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/fanta-soft-drink.jpg" alt="Fanta- Soft Drink">
+                            </figure>
+                            <h3 class="item-name">Fanta- Soft Drink</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1.75 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 80</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Fanta-Soft Drink',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Beverages/greenn%20tea.jfif" alt="Green Tea">
+                             </figure>
+                             <h3 class="item-name">Green Tea</h3>
+                         </div>
+                         <div>
+                             <p class="amount">250g</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 220</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Green Tea',220)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/Litchi.jpg" alt="Litchi">
+                            </figure>
+                            <h3 class="item-name">Real- Fruit Power Litchi</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 90</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Real-Fruit Power Litchi',90)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/mango%20drink.jpg" alt="Mango Drink">
+                            </figure>
+                            <h3 class="item-name">Mango Drink</h3>
+                        </div>
+                        <div>
+                            <p class="amount">180 ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 20</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Mango Drink',20)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/Mango.jpg" alt="Mango">
+                            </figure>
+                            <h3 class="item-name">Real- Fruit Power Mango</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 100</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Real-Fruit Power Mango',100)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Beverages/mirinda-soft-drink.jpg" alt="Mirinda- Soft Drink">
+                             </figure>
+                             <h3 class="item-name">Mirinda- Soft Drink</h3>
+                         </div>
+                         <div>
+                             <p class="amount">2.25 L</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 85</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Mirinda',85)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/MIxed%20Fruit.jpg" alt="Mixed Fruit">
+                            </figure>
+                            <h3 class="item-name">Mixed-Fruit</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 90</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Mixed-Fruit',90)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/nescafe-chilled-latte-coffee.jpg" alt="Nescafe Chilled Latte Coffee">
+                            </figure>
+                            <h3 class="item-name">Nescafe- Chilled Latte Coffee</h3>
+                        </div>
+                        <div>
+                            <p class="amount">180 ml</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 35</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Nescafe-Chilled Latte Coffee',35)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/orange%20juice.jpg" alt="Orange Juice">
+                            </figure>
+                            <h3 class="item-name">Real- Orange Juice</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 130</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Real-Orange Juice',130)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources/imgs/Beverages/pepsi-soft-drink.jpg" alt="Pepsi- Soft Drink">
+                             </figure>
+                             <h3 class="item-name">Pepsi</h3>
+                         </div>
+                         <div>
+                             <p class="amount">2.25 L</p>
+                             <p class="cost">MRP   <span>&#8377;</span> 90</p>
+                         </div>
+                         <div>
+                             <a onclick="return cart('Pepsi',90)" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/sprite-soft-drink.jpg" alt="Sprite">
+                            </figure>
+                            <h3 class="item-name">Sprite</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1.75 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 80</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Sprite',80)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                        <div>
+                            <figure class="item">
+                                <img class="image" src="resources/imgs/Beverages/thums-up-soft-drink.jpg" alt="Thums-Up">
+                            </figure>
+                            <h3 class="item-name">Thums Up</h3>
+                        </div>
+                        <div>
+                            <p class="amount">1.75 L</p>
+                            <p class="cost">MRP   <span>&#8377;</span> 85</p>
+                        </div>
+                        <div>
+                            <a onclick="return cart('Thums Up',85)" href="#" class="btn btn-full">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                   <li><a href="#">Contact us:</a></li>
+                   <p class="para-foot">040-2110-1894-2618<br>Email us: thefkgroceries@gmail.co.in</p>
+               </ul>
+            </div>
+            <div class="col span-1-of-2">
+               <ul class="footer-nav"> 
+                   <li><a href="#"><ion-icon class="ion-social-facebook" name="logo-facebook"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-twitter" name="logo-twitter"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-instagram" name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="row">
+           <p>
+              Copyright &copy; 2020 by Freshkart. All rights reserved.
+            </p>  
+        </div>
+      </footer>
+     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> 
+   </body>
+</html>
